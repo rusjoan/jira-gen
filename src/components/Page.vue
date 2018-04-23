@@ -29,7 +29,7 @@ export default {
     width: 210mm;
     height: 297mm;
     box-shadow: 1px 1px 10px rgba(0,0,0,.4);
-    margin: 10px auto;
+    margin: 10px auto 30px auto;
     vertical-align: top;
   }
   @media print {
