@@ -2,14 +2,14 @@
   <div class="pdf-page">
     <div class="task" :class="{'bug': task.bug === 1}" v-for="(task, idx) in tasks" :key="idx">
       <div class="header">
-        <span class="number">{{ task.number }}</span>
+        <span class="number">
+          {{ task.number }}
+          <span>{{ task.price }}</span>
+        </span>
         <span class="title">{{ task.title }}</span>
       </div>
       <div class="body">
         {{ task.description }}
-      </div>
-      <div class="footer">
-        SP: <b>{{ task.price || '[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]' }}</b>
       </div>
     </div>
   </div>
@@ -64,11 +64,15 @@ export default {
       line-height: 4mm;
       .number {
         font-weight: bold;
-        margin-right: 5mm;
         display: block;
         font-size: 10mm;
         line-height: 8mm;
         min-height: 6mm;
+        span {
+          float: right;
+          font-weight: 300;
+          color: rgba(0,0,0,.5)
+        }
       }
     }
     .body {
