@@ -46,7 +46,7 @@ export default {
     border: .5mm solid $border-color;
     display: inline-flex;
     flex-direction: column;
-    font-family: "PT Sans";
+    font-family: 'Open Sans', sans-serif;
     margin: .5mm;
     overflow: hidden;
     position: relative;
@@ -58,7 +58,6 @@ export default {
       padding: 1.6mm;
     }
     .header {
-      font-family: "PT Sans Caption";
       border-bottom: .5mm solid $border-color;
       font-size: 4mm;
       line-height: 4mm;
@@ -77,8 +76,8 @@ export default {
     }
     .body {
       flex: 1;
-      font-size: 6mm;
-      line-height: 6mm;
+      font-size: 7.4mm;
+      line-height: 1em;
       text-overflow: ellipsis;
       font-weight: 300;
     }

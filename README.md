@@ -2,6 +2,8 @@
 
 > Task-sticker generator
 
+`rsync -r dist/ kodanru@rusjoan.ru:~/rusjoan/public_html/jira-gen/`
+
 ## Build Setup
 
 ``` bash
