@@ -50,7 +50,7 @@ export default {
       return this.hotSettings.data.filter(t => t.description && t.description.length > 0);
     },
     chunks () {
-      const chunkSize = 12;
+      const chunkSize = 6;
       return Array(Math.ceil(this.tasks.length / chunkSize)).fill(0).map((_, idx) => {
         return this.tasks.slice(idx * chunkSize, (idx+1) * chunkSize);
       })

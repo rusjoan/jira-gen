@@ -26,11 +26,12 @@ export default {
   $border-color: rgba(0,0,0,.2);
   .pdf-page {
     size: A4;
-    width: 210mm;
-    height: 297mm;
+    width: 209mm;
+    height: 296mm;
     box-shadow: 1px 1px 10px rgba(0,0,0,.4);
     margin: 10px auto 30px auto;
     vertical-align: top;
+    padding: 2cm;
   }
   @media print {
     .pdf-page {
@@ -40,24 +41,35 @@ export default {
   }
   .task {
     color: black;
-    width: 69mm;
-    height: 73mm;
+    width: 76mm;
+    height: 76mm;
     font-size: 6mm;
-    border: .5mm solid $border-color;
+    //border: .5mm solid $border-color;
+    /*border-bottom: .1mm solid gray;*/
+    position: relative;
     display: inline-flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    margin: .5mm;
+    margin: 0 4mm 4mm 4mm;
     overflow: hidden;
     position: relative;
-    background: #f5ff75 !important;
+    //background: #f5ff75 !important;
+    &:before {
+      display: block;
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 10mm;
+      border: .4mm solid gray;
+      border-bottom: 0;
+    }
     &.bug {
       background: #ffc7c7 !important;
     }
     .header, .body, .footer {
-      padding: 1.6mm;
     }
     .header {
+      padding: 4mm 4mm 2mm 4mm;
       border-bottom: .5mm solid $border-color;
       font-size: 4mm;
       line-height: 4mm;
@@ -75,6 +87,7 @@ export default {
       }
     }
     .body {
+      padding: 2mm 4mm 2mm 4mm;
       flex: 1;
       font-size: 7.4mm;
       line-height: 1em;
@@ -96,6 +109,6 @@ export default {
   }
   @page {
     size: A4;
-    margin: .2cm;
+    /*margin: .2cm;*/
   }
 </style>
