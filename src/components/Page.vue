@@ -70,7 +70,7 @@ export default {
     }
     .header {
       padding: 4mm 4mm 2mm 4mm;
-      border-bottom: .5mm solid $border-color;
+      border-bottom: .5mm solid gray;
       font-size: 4mm;
       line-height: 4mm;
       .number {
