@@ -2,10 +2,10 @@
   <div id="app">
     <div class="left">
       <hot-table :root="root" :settings="hotSettings"></hot-table>
-      <p>* Showing only tasks with filled description</p>
-      <p><a href="static/template.pdf">Download an A4 template</a></p>
     </div>
     <div class="right">
+      <p class="text-center">* Showing only tasks with filled description</p>
+      <p class="text-center"><a href="static/template.pdf">Download an A4 template</a></p>
       <template v-for="(chunk, idx) in chunks">
         <Page :tasks="chunk" :key="idx" />
       </template>
@@ -92,6 +92,11 @@ export default {
     }
     .left {
       display: none;
+    }
+    .right {
+      &>p {
+        display: none;
+      }
     }
   }
 </style>
