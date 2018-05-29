@@ -2,6 +2,8 @@
   <div id="app">
     <div class="left">
       <hot-table :root="root" :settings="hotSettings"></hot-table>
+      <p>* Showing only tasks with filled description</p>
+      <p><a href="static/template.pdf">Download an A4 template</a></p>
     </div>
     <div class="right">
       <template v-for="(chunk, idx) in chunks">
