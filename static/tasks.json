@@ -1,0 +1,14 @@
+[
+  {
+    "price": "1",
+    "description": "Описание задачи 1",
+    "title": "Первая история",
+    "number": "PROJ-1"
+  },
+  {
+    "price": "3",
+    "description": "Описание задачи 2",
+    "title": "Первая история",
+    "number": "PROJ-1"
+  }
+]
